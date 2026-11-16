@@ -2,7 +2,7 @@
 
 **Instructions:** Work in small groups to complete the following exercises. Try sketching out your work on the whiteboards or scratch paper. Everyone should submit their own answers to the exercises, but you are encouraged to discuss your reasoning with your group members.
 
-Name(s): ___________________________
+Name(s): Marshall Obeng Benne 
 
 ---
 
