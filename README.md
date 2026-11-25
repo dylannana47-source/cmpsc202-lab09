@@ -99,7 +99,11 @@ $$3^ic(n/2^i)^2 = cn^2(3/4)^i$$
 
 1. During lecture last week, we looked at two different divide-and-conquer algorithms. What were these algorithms and what problems did they solve?
 
-The two examples were merge sort, which sorts a list by sorting its halves and merging them, and binary search, which finds a target in a sorted list by repeatedly narrowing the search to one half.
+The two algorithms we discussed in class were Merge Sort
+and Nearest Neighbors. Merge Sort is used to sort elements
+by dividing them into smaller parts and merging them back
+together. Nearest Neighbors is used to find the two points
+with the smallest distance between them.
 
 
 2. How do the algorithms you analyzed in this lab compare to the ones we discussed in lecture? Specifically, each algorithm differs from the two we discussed in lecture in one important way. For each of the algorithms above, what is that difference?
