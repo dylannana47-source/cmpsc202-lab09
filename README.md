@@ -108,6 +108,12 @@ with the smallest distance between them.
 
 2. How do the algorithms you analyzed in this lab compare to the ones we discussed in lecture? Specifically, each algorithm differs from the two we discussed in lecture in one important way. For each of the algorithms above, what is that difference?
 
-`Mystery` makes recursive calls on two unequal parts (about one-third and two-thirds), unlike merge sort's equal halves. It also recurses on both parts, unlike binary search, which follows just one half.
+The Mystery algorithm is different because it divides the
+input into two unequal parts, while the algorithms we
+discussed in class divide the input into two roughly
+equal parts.
 
-The recurrence in Exercise 2 makes three recursive calls on half-size inputs and has quadratic work at each node. In contrast, merge sort makes two such calls and does linear combine work, while binary search makes one such call and does constant work outside the call.
+The algorithm in Exercise 2 is different because it makes
+three recursive calls instead of two. It also does
+quadratic work in the combining step, while Merge Sort
+and Nearest Neighbors use linear combining steps.
