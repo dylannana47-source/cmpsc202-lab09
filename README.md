@@ -30,9 +30,17 @@ Procedure Mystery(A, n)
 ### Part A: The Recurrence Relation
 Let $T(n)$ be the running time of `Mystery` on an input of size $n$. Write down a recurrence relation for the worst-case running time $T(n)$. You may assume $n$ is a power of 3 for simplicity. *(Note: You do not need to solve the recurrence relation yet, just formulate it).*
 
-The algorithm makes recursive calls on about $n/3$ and $2n/3$ elements, then does a linear pass through the array. Thus, for $n > 1$,
+The recurrence relation is:
 
-$$T(n) = T(n/3) + T(2n/3) + \Theta(n), \qquad T(1) = \Theta(1).$$
+$$T(n) = T(n/3) + T(2n/3) + \Theta(n)$$
+
+Base case: $T(1) = \Theta(1)$.
+
+The algorithm divides the array into two parts. The first
+part contains one-third of the elements, while the second
+part contains the remaining two-thirds. The combining step
+takes linear time because the loop goes through every
+element in the array.
 
 ### Part B: Visualizing Algorithm Behavior
 Without solving the recurrence, look closely at the recursive calls and the combine step. If you were to draw the recursion tree for this algorithm, what would it look like? Is the tree balanced or skewed? 
