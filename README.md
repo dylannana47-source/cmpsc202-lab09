@@ -66,15 +66,34 @@ where $c$ is a positive constant.
 
 Analyze the running time of the algorithm by unrolling the recursion tree. Specifically, answer the following questions:
 
-1. **Root Work:** The root handles an input of size $n$, so its work is $cn^2$.
-2. **First Levels:** At level $1$, there are 3 subproblems of size $n/2$, for a total of $3c(n/2)^2 = \frac{3}{4}cn^2$. At level $2$, there are 9 subproblems of size $n/4$, for a total of $9c(n/4)^2 = \frac{9}{16}cn^2$.
-3. **Tree Height:** After $i$ levels, each subproblem has size $n/2^i$. Setting this equal to 1 gives $i = \log_2 n$, so the height is $\log_2 n$ (up to rounding when $n$ is not a power of 2).
+1. **Root Work:** The root does $cn^2$ work because it
+   handles the entire input of size $n$.
 
-**Bonus!** At level $i$, there are $3^i$ subproblems, each of size $n/2^i$. The total work at that level is
+2. **First Levels:** At level 1, the problem is divided
+   into three subproblems of size $n/2$. Therefore, the
+   total work is:
 
-$$3^i c\left(\frac{n}{2^i}\right)^2 = cn^2\left(\frac{3}{4}\right)^i.$$
+   $$3c(n/2)^2 = \frac{3}{4}cn^2$$
 
----
+   At level 2, there are nine subproblems of size $n/4$.
+   The total work is:
+
+   $$9c(n/4)^2 = \frac{9}{16}cn^2$$
+
+3. **Tree Height:** The input size is divided by two at
+   each level until it reaches the base case. Therefore,
+
+   $$\frac{n}{2^i} = 1$$
+
+   The height of the tree is $\log_2 n$.
+
+Also:
+
+At level $i$, there are $3^i$ subproblems, each with
+a size of $n/2^i$. Multiplying the number of subproblems
+by the work done in each gives:
+
+$$3^ic(n/2^i)^2 = cn^2(3/4)^i$$
 
 ## Exercise 3: Reflection
 
