@@ -45,7 +45,11 @@ element in the array.
 ### Part B: Visualizing Algorithm Behavior
 Without solving the recurrence, look closely at the recursive calls and the combine step. If you were to draw the recursion tree for this algorithm, what would it look like? Is the tree balanced or skewed? 
 
-Each node has two children, but they are different sizes: one gets about one-third of the elements and the other gets about two-thirds. The tree is therefore unbalanced rather than evenly split. The one-third branches reach the base case sooner, while repeatedly following the larger branch takes more levels. Each node also does linear work in the size of its subproblem.
+The recursion tree would be unbalanced because the algorithm
+does not divide the array into equal parts. The left side
+has fewer elements, so it reaches the base case faster than
+the right side. Each node also does linear work based on
+the size of its subproblem.
 
 ---
 
